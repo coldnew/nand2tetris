@@ -17,7 +17,7 @@ jobs:
         run: sudo apt-get install emacs-nox --yes
 
       - name: Build notes
-        run: make notes
+        run: make publish
 
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4

@@ -1,6 +1,6 @@
-all: notes
+all: publish
 
-notes:
+publish:
 	make -C notes
 
 .PHONY: all
