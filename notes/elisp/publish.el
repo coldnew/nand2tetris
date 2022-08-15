@@ -84,3 +84,6 @@
 (org-publish-all t)
 
 ;;; publish.el ends here
+
+;; refs:
+;; https://github.com/kennyballou/kennyballou.github.io/blob/52a34b1773fe5b8dfd9512bd5600567d6121639f/build-site.el
