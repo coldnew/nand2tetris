@@ -45,3 +45,9 @@ Part I, 也就是當下的課程，將會花費 7 周在硬體上面，我們將
 Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，學習如何編寫 組譯器 (assembler) , 以及編譯器 (compiler), 然後可以寫我們自己的軟體, 比如跑一個俄羅斯方塊 (Tetris) 在這個 HACK 電腦上。
 
 這個課程也有對應的課本，如果你有興趣可以去找: The Elements of Computing Systems.
+
+* References
+
+這邊紀錄我為了這個課程參考的其他文獻或是 repo
+
+- https://github.com/ghaiklor/nand-2-tetris
