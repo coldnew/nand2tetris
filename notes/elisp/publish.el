@@ -25,25 +25,36 @@
 ;;
 
 ;;; Code:
-(require 'package)
-(require 'ox-publish)
 
-(setq org-publish-timestamp-directory
-      (expand-file-name "org-timestamps" "caches"))
-(setq package-user-dir (expand-file-name "packages" "caches"))
+
+;;; Personal Information
+
+(setq user-full-name "Yen-Chin, Lee")
+(setq user-mail-address "coldnew.tw@gmail.com")
+
+;;; Initialize packages
+
+(require 'package)
+
+(setq package-user-dir
+      (expand-file-name "packages" "caches"))
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			 ("elpa" . "https://elpa.gnu.org/packages/")))
 
-;; (package-initialize)
+(setq package-load-list '((htmlize t)))
+
+(package-initialize)
+
 ;; (unless package-archive-contents
 ;;   (package-refresh-contents))
 
-(package-install 'htmlize)
+;;; Initialize org-mode
 
+(require 'ox-publish)
 
-(setq user-full-name "Yen-Chin, Lee")
-(setq user-mail-address "coldnew.tw@gmail.com")
+(setq org-publish-timestamp-directory
+      (expand-file-name "org-timestamps" "caches"))
 
 ;; extend babel functions
 (org-babel-do-load-languages

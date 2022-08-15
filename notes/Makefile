@@ -10,6 +10,6 @@ clean:
 	$(RM) -rf public
 
 compile:
-	${EMACS} --script "elisp/publish.el"
+	${EMACS} -Q --script "elisp/publish.el"
 
 .PHONY: all
