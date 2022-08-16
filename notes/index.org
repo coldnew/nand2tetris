@@ -48,6 +48,8 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 
 ** 0.2: From Nand to Hack
 
+網址: https://www.coursera.org/learn/build-a-computer/lecture/Y1MVe/unit-0-2-from-nand-to-hack
+
 在這個課程我們將講如何做出一個名為 Hack 的電腦，你可以將其接上螢幕和鍵盤，並搭配你寫的程式去執行它。
 
 [[file:imgs/unit0.2-1.png]]
