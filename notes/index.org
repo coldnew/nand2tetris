@@ -46,6 +46,29 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 
 這個課程也有對應的課本，如果你有興趣可以去找: The Elements of Computing Systems.
 
+** 0.2: From Nand to Hack
+
+在這個課程我們將講如何做出一個名為 Hack 的電腦，你可以將其接上螢幕和鍵盤，並搭配你寫的程式去執行它。
+
+[[file:imgs/unit0.2-1.png]]
+
+整個流程如下:
+
+[[file:imgs/unit0.2-2.png]]
+
+然而，就如同前面講的，我們會將這個課程分成兩個部份， Part I 就是在著重於這個部份。
+
+[[file:imgs/unit0.2-3.png]]
+
+我們將從數位電路構成最基本的 NAND 邏輯閘開始來組成 組合邏輯(Combinational logic) 和循序邏輯 (Seuential logic) 開始，來組出我們的 Hack 電腦。
+
+[[file:imgs/unit0.2-4.png]]
+
+那到底要怎樣做出一個晶片呢? 現代的工程師都是透過硬體模擬器來驗證他們的想法，在這個課程中我們也會有一個課程專用的硬體模擬器以及課程專用的硬體描述語言。
+
+我們將會先學會畫出 chip diagram, 然後將其轉成硬體描述語言，然後在硬體模擬器上面去模擬。
+
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
