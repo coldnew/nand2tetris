@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-08-15 Mon 07:50 -->
+<!-- 2022-08-16 Tue 05:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nand2Tetris 課程筆記</title>
@@ -236,24 +236,25 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf89165f">Unit 0</a>
+<li><a href="#org71b57c0">Unit 0</a>
 <ul>
-<li><a href="#orgaa489ee">0.0: Introduction</a></li>
-<li><a href="#orgbd309e5">0.1: The Road Ahead</a></li>
+<li><a href="#org622cec5">0.0: Introduction</a></li>
+<li><a href="#orgd0ae91d">0.1: The Road Ahead</a></li>
+<li><a href="#orgd3fe031">0.2: From Nand to Hack</a></li>
 </ul>
 </li>
-<li><a href="#org51be9fd">References</a></li>
+<li><a href="#org974ba4e">References</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf89165f" class="outline-2">
-<h2 id="orgf89165f">Unit 0</h2>
-<div class="outline-text-2" id="text-orgf89165f">
+<div id="outline-container-org71b57c0" class="outline-2">
+<h2 id="org71b57c0">Unit 0</h2>
+<div class="outline-text-2" id="text-org71b57c0">
 </div>
-<div id="outline-container-orgaa489ee" class="outline-3">
-<h3 id="orgaa489ee">0.0: Introduction</h3>
-<div class="outline-text-3" id="text-orgaa489ee">
+<div id="outline-container-org622cec5" class="outline-3">
+<h3 id="org622cec5">0.0: Introduction</h3>
+<div class="outline-text-3" id="text-org622cec5">
 <p>
 網址: <a href="https://www.coursera.org/learn/build-a-computer/lecture/tfRns/unit-0-0-introduction">https://www.coursera.org/learn/build-a-computer/lecture/tfRns/unit-0-0-introduction</a>
 </p>
@@ -279,9 +280,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgbd309e5" class="outline-3">
-<h3 id="orgbd309e5">0.1: The Road Ahead</h3>
-<div class="outline-text-3" id="text-orgbd309e5">
+<div id="outline-container-orgd0ae91d" class="outline-3">
+<h3 id="orgd0ae91d">0.1: The Road Ahead</h3>
+<div class="outline-text-3" id="text-orgd0ae91d">
 <p>
 網址: <a href="https://www.coursera.org/learn/build-a-computer/lecture/gd00Q/unit-0-1-the-road-ahead">https://www.coursera.org/learn/build-a-computer/lecture/gd00Q/unit-0-1-the-road-ahead</a>
 </p>
@@ -330,11 +331,65 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 </p>
 </div>
 </div>
+
+<div id="outline-container-orgd3fe031" class="outline-3">
+<h3 id="orgd3fe031">0.2: From Nand to Hack</h3>
+<div class="outline-text-3" id="text-orgd3fe031">
+<p>
+在這個課程我們將講如何做出一個名為 Hack 的電腦，你可以將其接上螢幕和鍵盤，並搭配你寫的程式去執行它。
+</p>
+
+
+<div class="figure">
+<p><img src="imgs/unit0.2-1.png" alt="unit0.2-1.png" />
+</p>
 </div>
 
-<div id="outline-container-org51be9fd" class="outline-2">
-<h2 id="org51be9fd">References</h2>
-<div class="outline-text-2" id="text-org51be9fd">
+<p>
+整個流程如下:
+</p>
+
+
+<div class="figure">
+<p><img src="imgs/unit0.2-2.png" alt="unit0.2-2.png" />
+</p>
+</div>
+
+<p>
+然而，就如同前面講的，我們會將這個課程分成兩個部份， Part I 就是在著重於這個部份。
+</p>
+
+
+<div class="figure">
+<p><img src="imgs/unit0.2-3.png" alt="unit0.2-3.png" />
+</p>
+</div>
+
+<p>
+我們將從數位電路構成最基本的 NAND 邏輯閘開始來組成 組合邏輯(Combinational logic) 和循序邏輯 (Seuential logic) 開始，來組出我們的 Hack 電腦。
+</p>
+
+
+<div class="figure">
+<p><img src="imgs/unit0.2-4.png" alt="unit0.2-4.png" />
+</p>
+</div>
+
+<p>
+那到底要怎樣做出一個晶片呢? 現代的工程師都是透過硬體模擬器來驗證他們的想法，在這個課程中我們也會有一個課程專用的硬體模擬器以及課程專用的硬體描述語言。
+</p>
+
+<p>
+我們將會先學會畫出 chip diagram, 然後將其轉成硬體描述語言，然後在硬體模擬器上面去模擬。
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org974ba4e" class="outline-2">
+<h2 id="org974ba4e">References</h2>
+<div class="outline-text-2" id="text-org974ba4e">
 <p>
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
 </p>
