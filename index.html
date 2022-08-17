@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-08-16 Tue 05:04 -->
+<!-- 2022-08-17 Wed 04:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nand2Tetris 課程筆記</title>
@@ -236,25 +236,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgab04a1e">Unit 0</a>
+<li><a href="#org794e777">Unit 0</a>
 <ul>
-<li><a href="#org8b8e8cc">0.0: Introduction</a></li>
-<li><a href="#org73cccb5">0.1: The Road Ahead</a></li>
-<li><a href="#orge71e67d">0.2: From Nand to Hack</a></li>
+<li><a href="#org801b19e">0.0: Introduction</a></li>
+<li><a href="#org2558266">0.1: The Road Ahead</a></li>
+<li><a href="#orgd01b5e9">0.2: From Nand to Hack</a></li>
+<li><a href="#org41ba865">0.3: From Hack to Tetris</a></li>
 </ul>
 </li>
-<li><a href="#org9db2414">References</a></li>
+<li><a href="#orgea5513c">References</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgab04a1e" class="outline-2">
-<h2 id="orgab04a1e">Unit 0</h2>
-<div class="outline-text-2" id="text-orgab04a1e">
+<div id="outline-container-org794e777" class="outline-2">
+<h2 id="org794e777">Unit 0</h2>
+<div class="outline-text-2" id="text-org794e777">
 </div>
-<div id="outline-container-org8b8e8cc" class="outline-3">
-<h3 id="org8b8e8cc">0.0: Introduction</h3>
-<div class="outline-text-3" id="text-org8b8e8cc">
+<div id="outline-container-org801b19e" class="outline-3">
+<h3 id="org801b19e">0.0: Introduction</h3>
+<div class="outline-text-3" id="text-org801b19e">
 <p>
 網址: <a href="https://www.coursera.org/learn/build-a-computer/lecture/tfRns/unit-0-0-introduction">https://www.coursera.org/learn/build-a-computer/lecture/tfRns/unit-0-0-introduction</a>
 </p>
@@ -280,9 +281,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org73cccb5" class="outline-3">
-<h3 id="org73cccb5">0.1: The Road Ahead</h3>
-<div class="outline-text-3" id="text-org73cccb5">
+<div id="outline-container-org2558266" class="outline-3">
+<h3 id="org2558266">0.1: The Road Ahead</h3>
+<div class="outline-text-3" id="text-org2558266">
 <p>
 網址: <a href="https://www.coursera.org/learn/build-a-computer/lecture/gd00Q/unit-0-1-the-road-ahead">https://www.coursera.org/learn/build-a-computer/lecture/gd00Q/unit-0-1-the-road-ahead</a>
 </p>
@@ -327,14 +328,18 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 </p>
 
 <p>
-這個課程也有對應的課本，如果你有興趣可以去找: The Elements of Computing Systems.
+這個課程也有對應的課本，如果你有興趣可以去找:
+</p>
+
+<p>
+<a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/026264068">The Elements of Computing SYstems: Building a Modrn Computer from Frist Principles</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge71e67d" class="outline-3">
-<h3 id="orge71e67d">0.2: From Nand to Hack</h3>
-<div class="outline-text-3" id="text-orge71e67d">
+<div id="outline-container-orgd01b5e9" class="outline-3">
+<h3 id="orgd01b5e9">0.2: From Nand to Hack</h3>
+<div class="outline-text-3" id="text-orgd01b5e9">
 <p>
 網址: <a href="https://www.coursera.org/learn/build-a-computer/lecture/Y1MVe/unit-0-2-from-nand-to-hack">https://www.coursera.org/learn/build-a-computer/lecture/Y1MVe/unit-0-2-from-nand-to-hack</a>
 </p>
@@ -388,12 +393,53 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 </p>
 </div>
 </div>
+
+<div id="outline-container-org41ba865" class="outline-3">
+<h3 id="org41ba865">0.3: From Hack to Tetris</h3>
+<div class="outline-text-3" id="text-org41ba865">
+<p>
+在這課程的第一個部份我們將從 NAND Gate 開始，然後學習 HACK CPU 的組合語言並將其編譯程 binary 檔案來執行。
+</p>
+
+
+<div class="figure">
+<p><img src="imgs/unit0.3-1.png" alt="unit0.3-1.png" />
+</p>
 </div>
 
+<p>
+實際上現代開發大部分都是用像以下這樣的高階程式語言
+</p>
 
-<div id="outline-container-org9db2414" class="outline-2">
-<h2 id="org9db2414">References</h2>
-<div class="outline-text-2" id="text-org9db2414">
+<div class="org-src-container">
+<pre class="src src-java"><span style="font-weight: bold; text-decoration: underline;">Class</span> <span style="font-weight: bold; font-style: italic;">Main</span> {
+    function <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">main</span>() {
+        <span style="font-weight: bold;">do</span> Output.printString(<span style="font-style: italic;">"Hello World!"</span>);
+        <span style="font-weight: bold;">do</span> Output.println()
+        <span style="font-weight: bold;">return</span>;
+    }
+}
+</pre>
+</div>
+
+<p>
+這部份我們將在 part II 將會開發一個名為 Jack 的高階語言，以及需要的函式庫和作業系統。
+</p>
+
+<p>
+如果你等不急這個課程，可以去看這課程的實體書教材:
+</p>
+
+<p>
+<a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/026264068">The Elements of Computing SYstems: Building a Modrn Computer from Frist Principles</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgea5513c" class="outline-2">
+<h2 id="orgea5513c">References</h2>
+<div class="outline-text-2" id="text-orgea5513c">
 <p>
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
 </p>
