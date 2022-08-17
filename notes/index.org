@@ -44,7 +44,9 @@ Part I, 也就是當下的課程，將會花費 7 周在硬體上面，我們將
 
 Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，學習如何編寫 組譯器 (assembler) , 以及編譯器 (compiler), 然後可以寫我們自己的軟體, 比如跑一個俄羅斯方塊 (Tetris) 在這個 HACK 電腦上。
 
-這個課程也有對應的課本，如果你有興趣可以去找: The Elements of Computing Systems.
+這個課程也有對應的課本，如果你有興趣可以去找:
+
+[[https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/026264068][The Elements of Computing SYstems: Building a Modrn Computer from Frist Principles]]
 
 ** 0.2: From Nand to Hack
 
@@ -82,13 +84,17 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
   Class Main {
       function void main() {
           do Output.printString("Hello World!");
-          do Output.println(); // New line
+          do Output.println()
           return;
       }
   }
 #+end_src
 
 這部份我們將在 part II 將會開發一個名為 Jack 的高階語言，以及需要的函式庫和作業系統。
+
+如果你等不急這個課程，可以去看這課程的實體書教材:
+
+[[https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/026264068][The Elements of Computing SYstems: Building a Modrn Computer from Frist Principles]]
 
 * References
 
