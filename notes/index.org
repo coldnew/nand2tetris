@@ -70,6 +70,25 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 
 我們將會先學會畫出 chip diagram, 然後將其轉成硬體描述語言，然後在硬體模擬器上面去模擬。
 
+** 0.3: From Hack to Tetris
+
+在這課程的第一個部份我們將從 NAND Gate 開始，然後學習 HACK CPU 的組合語言並將其編譯程 binary 檔案來執行。
+
+[[file:imgs/unit0.3-1.png]]
+
+實際上現代開發大部分都是用像以下這樣的高階程式語言
+
+#+begin_src java
+  Class Main {
+      function void main() {
+          do Output.printString("Hello World!");
+          do Output.println(); // New line
+          return;
+      }
+  }
+#+end_src
+
+這部份我們將在 part II 將會開發一個名為 Jack 的高階語言，以及需要的函式庫和作業系統。
 
 * References
 
