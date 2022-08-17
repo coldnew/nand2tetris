@@ -96,6 +96,23 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 
 [[https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/026264068][The Elements of Computing SYstems: Building a Modrn Computer from Frist Principles]]
 
+** 0.4: Project 0 Overview
+
+這課程將講你針對第一個專案 (Project 0) 需要做哪些準備，首先你需要下載 Nand2Tetris 的軟體，到 https://www.nand2tetris.org/software 下載。
+
+在我的筆記裡面，我會將其解壓縮後放到 [[https://github.com/coldnew/nand2tetris/tree/master/nand2tetris][nand2tetris]] 資料夾去。 
+
+比如我們要執行硬體模擬器，則可以這樣執行:
+
+: ./nand2tetris/tools/HardwareSimulator.sh
+
+整個軟體的資料夾結構是這樣，有些部份是給 Part II 課程使用的。
+
+[[file:imgs/unit0.4-1.png]]
+
+而在我們的 Project 0, 你的任務就是將 =nand2tetris/projects/00/file.txt= 上傳到課程網址確認你真的有下載這個軟體。
+
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
