@@ -112,6 +112,8 @@ Part II 則是另外一個課程，將會從我們打造的 HACK 電腦開始，
 
 而在我們的 Project 0, 你的任務就是將 =nand2tetris/projects/00/file.txt= 上傳到課程網址確認你真的有下載這個軟體。
 
+(注意: 實際上要用 zip 封裝這個 file.txt, 並命名為 project0.zip 上傳才會得分)
+
 
 * References
 
