@@ -1,6 +1,7 @@
 #+TITLE: Nand2Tetris 課程筆記
 #+AUTHOR: Yen-Chin, Lee <coldnew.tw@gmail.com>
 #+DESCRIPTION:My personal note on nand2tetris
+#+STARTUP: overview indent align
 
 * Unit 0
 ** 0.0: Introduction
@@ -159,6 +160,31 @@ NOT 的運作則是輸入的相反，也就是輸入是 1 的話，則輸出是 
 
 [[file:imgs/unit1.1-4.png]]
 
+** 1.2: Boolean Functions Synthesis
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/zJKs1/unit-1-2-boolean-functions-synthesis 
+
+講述如何從真值表 (truth table) 將數值轉換回公式。
+
+基本上方法就像下面這樣，一行一行根據真值表先建立該行的公式，然後將其整合起來
+
+[[file:imgs/unit1.2-1.png]]
+
+所以就可以變成這樣:
+
+[[file:imgs/unit1.2-2.png]]
+
+注意到任意 boolean functions 可以用 =AND=, =OR=, =NOT= 來表示其組合, 這邊就是證明:
+
+[[file:imgs/unit1.2-3.png]]
+
+我們先來看 NAND 這個東西:
+
+[[file:imgs/unit1.2-4.png]]
+
+注意到如果是 =NAND(x,x)= 的話，則運作相當於 =NOT(x)=, 實際上任意 boolean function 可以用 =NAND= 來表示，這邊有證明:
+
+[[file:imgs/unit1.2-5.png]]
 
 
 * References
