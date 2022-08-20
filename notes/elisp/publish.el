@@ -51,6 +51,7 @@
 (package-install 'htmlize)
 (package-install 'nand2tetris)
 (package-install 'nand2tetris-assembler)
+(package-install 'yasnippet)
 
 ;;; Initialize org-mode
 
