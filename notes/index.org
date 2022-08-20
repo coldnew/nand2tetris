@@ -186,6 +186,40 @@ NOT 的運作則是輸入的相反，也就是輸入是 1 的話，則輸出是 
 
 [[file:imgs/unit1.2-5.png]]
 
+** 1.3: Logic Gates
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/Aqrh6/unit-1-3-logic-gates
+
+這個章節開始講如何實做邏輯電路 (Logic gaets)。
+
+首先是 =NAND= 邏輯閘，注意道上一章節已經證明這是一個萬用邏輯閘，你可以用 NAND 去實現 NOT 或是 OR 或是 AND 邏輯。
+
+[[file:imgs/unit1.3-1.png]]
+
+[[file:imgs/unit1.3-2.png]]
+
+我們可以用這些邏輯閘做出更複雜的電路，比如這樣:
+
+[[file:imgs/unit1.3-3.png]]
+
+這個電路需要 a=1,b=1,c=1 的情況下，out結果才會是 1。
+
+對於其他使用者而言，他們看到的是輸入與輸出（左上, gate interface)，而實際的實做則是隱藏起來（右下, gate impementation），像是黑盒子一樣，而這個課程就是要來實做這個黑盒子。
+
+了解 gate interface 和 gate implementation 的概念後，我們來看看電路的實做。
+
+比如 AND 就是串連電路，要兩個開關都打開的情況縣，電燈才會亮起來。
+
+而 OR 就是並聯電路，只要有一個開關點下去，就可以讓電燈亮起來。
+
+[[file:imgs/unit1.3-4.png]]
+
+了解這個概念，我們就知道三個輸入的 AND 邏輯就像是這個樣子:
+
+[[file:imgs/unit1.3-5.png]]
+
+當然，由於實際上邏輯電路的 "硬體" 實做非常複雜，不在這個課程討論的範圍，有興趣的話可以去修電子學。
+
 
 * References
 
