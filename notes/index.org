@@ -288,6 +288,97 @@ https://www.nand2tetris.org/software/HDL-Survival-Guide.html
 
 [[file:imgs/unit1.5-3.png]]
 
+** 1.6: Multi-Bit Buses
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/935Ye/unit-1-6-multi-bit-buses
+
+當一次要處理多個 bit 的時候，這種東西我們稱為 bus (a group of bits as a single entity)
+
+如下圖的 a, b, out 都是 16bit bus, 也就是不管輸入輸出都是一個 16bit 的 array
+
+[[file:imgs/unit1.6-1.png]]
+
+用 HDL 語言描述就是像是這樣
+
+#+begin_src nand2tetris
+  CHIP Add16 {
+      IN a[16], b[16];
+      OUT out[16];
+
+      PARTS:
+      // implement details
+  }
+#+end_src
+
+而要怎樣在 HDL 語言裡面連接多 bits 呢，則是這樣做:
+
+[[file:imgs/unit1.6-2.png]]
+
+或是
+
+[[file:imgs/unit1.6-3.png]]
+
+bus 也可以這樣寫成 sub-buses
+
+[[file:imgs/unit1.6-4.png]]
+
+** 1.7: Project 1 Overview
+
+網址： https://www.coursera.org/learn/build-a-computer/lecture/iyL0J/unit-1-7-project-1-overview
+
+這邊在對第一份作業進行概覽，你可以在 [[=nand2tetris/projects/01/=]] 這邊找到他們。
+
+我們會有一個 =Nand= 邏輯閘是實做好的，你的任務就是用它去實做其他的邏輯電路
+
+[[file:imgs/unit1.7-1.png]]
+
+[[file:imgs/unit1.7-2.png]]
+
+這邊講到 Multiplxor (Mux), Mux 就是一個具有選擇使用哪個輸入作為輸出的電路，你可以從下面的真值表觀察到 Mux 的 sel 會影響到輸出的結果
+
+[[file:imgs/unit1.7-3.png]]
+
+我們可以用 Mux 去實現可程式電路 (programmable gate)
+
+[[file:imgs/unit1.7-4.png]]
+
+我們該怎樣實現 Mux 呢
+
+[[file:imgs/unit1.7-5.png]]
+
+除了 Mux 外，還有 Demultiplexor, 顧名思義其功能就是和 Mux 相反，一樣有一個 sel 腳位可以進行控制，會使一種輸入變成多種輸出結果
+
+[[file:imgs/unit1.7-6.png]]
+
+Mux 和 DeMux 在通訊網路上面很常被使用到，
+
+[[file:imgs/unit1.7-7.png]]
+
+那我們要怎樣實做 And16 的電路呢，他的運算方式是這樣的
+
+[[file:imgs/unit1.7-8.png]]
+
+16-bit, 4-way multiplexor 則是這樣
+
+[[file:imgs/unit1.7-9.png]]
+
+接下來在講怎樣去思考實做 Xor chip，你的實做可以參考 Xor.cmp 的真值表，透過觀察來想要怎樣完成這樣的電路。
+
+[[file:imgs/unit1.7-10.png]]
+
+所有的作業都在 =nand2tetris/projectes/01= 裡面，去實現它並確認都運作正常， Project 01 就完成了。 
+
+如果你在使用HDL 語言時候，不知道邏輯閘的使用方式，可以看其 .hdl 檔案或是這邊:
+
+[[file:imgs/unit1.7-11.png]]
+
+其他要注意的事項:
+
+1. 用自己的文字編輯器去修改 *.hdl 檔案
+2. 任意電路實做無法呼叫自己, 你不能在 AND 實做裡面呼叫 AND
+
+[[file:imgs/unit1.7-12.png]]
+
 
 * References
 
