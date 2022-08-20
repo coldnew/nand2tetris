@@ -220,6 +220,51 @@ NOT 的運作則是輸入的相反，也就是輸入是 1 的話，則輸出是 
 
 當然，由於實際上邏輯電路的 "硬體" 實做非常複雜，不在這個課程討論的範圍，有興趣的話可以去修電子學。
 
+** 1.4: Hardware Description Language
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/8VOXT/unit-1-4-hardware-description-language
+
+這個章節要講 HDL (Hardware Description Language)語言, 這可以讓你像是寫程式一樣實做硬體電路，現實世界用的是 verilog 或是 chipsel 或是 VHDL, 這個課程則是使用課程專用的簡化版本語言。
+
+比如說 XOR 長的像是這樣:
+
+[[file:imgs/unit1.4-1.png]]
+
+這個實現可以透過真值表來推斷，比如
+
+: Xor = (a AND Not(b)) Or (b AND Not(a))
+
+所以如果我們要實現他的話，則可以用這樣的程式語言來描述:
+
+#+begin_src nand2tetris
+  CHIP Xor {
+          IN a, b;
+          OUT out;
+
+          PARTS:
+          Not(in=a, out=nota);
+          Not(in=b, out=notb);
+          And(a=a, b=notb, out=aAndNotb);
+          And(a=nota, b=b, out=notaAndb);
+          Or(a=aAndNotb, b=notaAndb, out=out);
+  }
+#+end_src
+
+如果將電路畫出來的話，則 Xor 就是長這個樣子 (方框中間就是 gate implementation, 不對外顯示的黑盒子部份, 也就是我們程式語言要實做的部份)
+
+[[file:imgs/unit1.4-2.png]]
+
+注意到 HDL 和一般程式語言一樣，可讀性很重要，和一般程式語言不同的是它沒有所謂得 procesure，另外，在這邊實做的時候，你需要知道每種晶片的 interface, 比如以下:
+
+#+begin_src nand2tetris
+  Not(in=, out=);
+  And(a=, b=, out=);
+  Or(a=, b=, out=);
+#+end_src
+
+想要知道更多這個課程用的 HDL 語言的資訊，可以到以下位址看:
+
+https://www.nand2tetris.org/software/HDL-Survival-Guide.html
 
 * References
 

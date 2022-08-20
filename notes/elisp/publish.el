@@ -37,7 +37,7 @@
 (require 'package)
 
 (setq package-user-dir
-      (expand-file-name "packages" "caches"))
+	  (expand-file-name "packages" "caches"))
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			 ("elpa" . "https://elpa.gnu.org/packages/")))
@@ -49,13 +49,15 @@
 
 ;;; Install packages
 (package-install 'htmlize)
+(package-install 'nand2tetris)
+(package-install 'nand2tetris-assembler)
 
 ;;; Initialize org-mode
 
 (require 'ox-publish)
 
 (setq org-publish-timestamp-directory
-      (expand-file-name "org-timestamps" "caches"))
+	  (expand-file-name "org-timestamps" "caches"))
 
 ;; extend babel functions
 (org-babel-do-load-languages
@@ -64,34 +66,34 @@
    (ditaa . t)))
 
 (add-to-list 'org-publish-project-alist
-	     `("notes-org"
-	       :recursive t
-	       :base-directory "."
-	       :base-extension "org"
-	       :publishing-directory "./public/"
-	       :publishing-function org-html-publish-to-html
-	       ;; :html-head-include-default-style nil
-	       ;; :html-head-include-scripts nil
-	       ;; :html-head ,sacha/emacs-notes-html-head
-	       ;; :auto-sitemap t                  ; Generate sitemap.org automagically...
-	       ;; :sitemap-filename "sitemap.org"  ; Call it sitemap.org (it's the default)...
-	       ;; :sitemap-title "Sitemap"         ; With title 'Sitemap'.
-	       ;; :makeindex t
-	       :with-timestamp t
-	       :section-numbers nil
-	       :html-preamble ""
-	       :html-postamble ""
-	       :htmlized-source t
-	       ))
+		 `("notes-org"
+		   :recursive t
+		   :base-directory "."
+		   :base-extension "org"
+		   :publishing-directory "./public/"
+		   :publishing-function org-html-publish-to-html
+		   ;; :html-head-include-default-style nil
+		   ;; :html-head-include-scripts nil
+		   ;; :html-head ,sacha/emacs-notes-html-head
+		   ;; :auto-sitemap t                  ; Generate sitemap.org automagically...
+		   ;; :sitemap-filename "sitemap.org"  ; Call it sitemap.org (it's the default)...
+		   ;; :sitemap-title "Sitemap"         ; With title 'Sitemap'.
+		   ;; :makeindex t
+		   :with-timestamp t
+		   :section-numbers nil
+		   :html-preamble ""
+		   :html-postamble ""
+		   :htmlized-source t
+		   ))
 
 (add-to-list 'org-publish-project-alist
-	     `("images"
-	       :recursive t
-	       :base-directory "./imgs"
-	       :base-extension ".*"
-	       :publishing-directory "./public/imgs"
-	       :publishing-function org-publish-attachment
-	       ))
+		 `("images"
+		   :recursive t
+		   :base-directory "./imgs"
+		   :base-extension ".*"
+		   :publishing-directory "./public/imgs"
+		   :publishing-function org-publish-attachment
+		   ))
 
 (org-publish-all t)
 
