@@ -379,6 +379,25 @@ Mux 和 DeMux 在通訊網路上面很常被使用到，
 
 [[file:imgs/unit1.7-12.png]]
 
+** 1.8: Perspectives
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/CNo2D/unit-1-8-perspectives 
+
+這邊回顧 Unit 1 的課程，以及回答一些問題
+
+Q1: 是否可能從不是 NAND 的邏輯閘開始製作電腦
+A1: 是可以的，但是 NAND gate 是非常常見 (並且也是萬用) 的
+
+Q2: 我們要怎樣實做一個 NAND Gate
+A2: 這樣從 Computer Scinece 角度來講了, 詳情去看電子學
+
+[[file:imgs/unit1.8-1.png]]
+
+Q3: 課程的 HDL 語言和現實得 verilog 或是 VHDL 有什麼不同
+A3: 實務上的 HDL 語言會更加複雜，這個課程用自己的 HDL 語言是為了簡化問題
+
+Q4: 目前實做的晶片都很簡單，怎樣實做複雜的電路
+A4: (太複雜了看影片就好)
 
 * References
 
