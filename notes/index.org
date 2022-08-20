@@ -266,6 +266,29 @@ NOT 的運作則是輸入的相反，也就是輸入是 1 的話，則輸出是 
 
 https://www.nand2tetris.org/software/HDL-Survival-Guide.html
 
+** 1.5: Hardware Simulation
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/jmAls/unit-1-5-hardware-simulation
+
+這個課程在介紹課程專用的 Hardware Simulator, 可以用來載入這個課程需要用到的 HDL 語言，並執行它。
+
+課程的 Hardware Simulatior 可以一部一部的模擬，需要學會怎樣使用它，這樣在寫作業會比較簡單，注意到程式不支援編輯 HDL 語言，需要使用外部編輯器去修改你的程式。
+
+[[file:imgs/unit1.5-1.png]]
+
+課程有影片介紹整個 Hardware Simulator 的使用，有問題最好回來看。
+
+在專案內的 =*.tst= 檔案是驗證用腳本，會根據指令設定不同類型的輸入來驗證結果，課程會提供這些腳本，因此我們只要專注在實做我們電路就好。
+
+而 =*.out= 是產生出來的真值表，你可以透過這個檔案知道你實做的硬體最終會怎樣的輸出。
+
+=*.cmp= 則是期望的結果，會用來和 =*.out= 檔案進行比對。
+
+[[file:imgs/unit1.5-2.png]]
+
+[[file:imgs/unit1.5-3.png]]
+
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
