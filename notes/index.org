@@ -383,7 +383,7 @@ Mux 和 DeMux 在通訊網路上面很常被使用到，
 
 網址: https://www.coursera.org/learn/build-a-computer/lecture/CNo2D/unit-1-8-perspectives 
 
-這邊回顧 Unit 1 的課程，以及回答一些問題
+這邊回顧 Unit 1 的課程，以及回答一些問題, 詳細的 FAQ 可以見 [[https://www.coursera.org/learn/build-a-computer/supplement/Dkosx/faq][這邊]]
 
 Q1: 是否可能從不是 NAND 的邏輯閘開始製作電腦
 A1: 是可以的，但是 NAND gate 是非常常見 (並且也是萬用) 的
