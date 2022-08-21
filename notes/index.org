@@ -326,7 +326,7 @@ bus 也可以這樣寫成 sub-buses
 
 網址： https://www.coursera.org/learn/build-a-computer/lecture/iyL0J/unit-1-7-project-1-overview
 
-這邊在對第一份作業進行概覽，你可以在 [[nand2tetris/projects/01/]] 這邊找到他們。
+這邊在對第一份作業進行概覽，你可以在 =nand2tetris/projects/01= 這邊找到他們。
 
 我們會有一個 =Nand= 邏輯閘是實做好的，你的任務就是用它去實做其他的邏輯電路
 
