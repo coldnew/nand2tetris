@@ -449,3 +449,4 @@ https://www.coursera.org/learn/build-a-computer/lecture/zY2v8/unit-2-1-binary-nu
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
 
 - https://github.com/ghaiklor/nand-2-tetris
+- https://github.com/pbrit/hack-verilog
