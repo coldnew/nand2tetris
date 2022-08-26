@@ -507,6 +507,27 @@ https://www.coursera.org/learn/build-a-computer/lecture/zY2v8/unit-2-1-binary-nu
   }
 #+end_src
 
+** 2.3: Negative Numbers
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/seM6y/unit-2-3-negative-numbers 
+
+我們要怎樣表示負值呢，以 4bit 的情況是這樣，我們如果都是正直的話，最多可以 0 ~ 15
+
+[[file:imgs/unit2.3-1.png]]
+
+如果我們將最高位的 bit 當作正負來表示，則可以這樣表示 -7 ~ 7 的數值
+
+[[file:imgs/unit2.3-2.png]]
+
+當然，還有一種方式就是 2's補數 ( =換算方式: 將數值轉成2進位後， 0 和 1 反轉，然後加上 1=)
+
+[[file:imgs/unit2.3-3.png]]
+
+[[file:imgs/unit2.3-4.png]]
+
+[[file:imgs/unit2.3-5.png]]
+
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
