@@ -443,6 +443,69 @@ https://www.coursera.org/learn/build-a-computer/lecture/zY2v8/unit-2-1-binary-nu
 
 [[file:imgs/unit2.1-6.png]]
 
+** 2.2: Binary Addition
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/tywAA/unit-2-2-binary-addition 
+
+這章在講 2進位數學運算，我們可以先將2進位先變成十進位，然後計算完成後在轉回2進位
+
+但是電腦的運作不是這樣，而是直接對 2進位進行計算，以加法來看就是這樣
+
+[[file:imgs/unit2.2-1.png]]
+
+當然計算的時候也要注意進位的問題
+
+[[file:imgs/unit2.2-2.png]]
+
+理解加法的運算後，我們就要知道怎樣做出硬體的加法，分成這三個
+
+[[file:imgs/unit2.2-3.png]]
+
+首先是半加器 Half Adder
+
+[[file:imgs/unit2.2-4.png]]
+
+因此你的作業就是做出這個半加器
+
+#+begin_src nand2tetris
+  CHIP HalfAdder {
+      IN a, b;    // 1-bit inputs
+      OUT sum,    // Right bit of a + b 
+          carry;  // Left bit of a + b
+
+      PARTS:
+      // Put you code here:
+  }
+#+end_src
+
+半加器之上就是所謂的全加器
+
+[[file:imgs/unit2.2-5.png]]
+
+一樣是作業要做出來
+
+#+begin_src nand2tetris
+  CHIP FullAdder {
+      IN a, b, c;  // 1-bit inputs
+      OUT sum,     // Right bit of a + b + c
+          carry;   // Left bit of a + b + c
+
+      PARTS:
+      // Put you code here:
+  }
+#+end_src
+
+知道半加器和全加器後，我們就可以做出加法器
+
+#+begin_src nand2tetris
+  CHIP Add16 {
+      IN a[16], b[16];
+      OUT out[16];
+
+      PARTS:
+     // Put you code here:
+  }
+#+end_src
 
 * References
 
