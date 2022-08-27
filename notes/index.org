@@ -527,6 +527,25 @@ https://www.coursera.org/learn/build-a-computer/lecture/zY2v8/unit-2-1-binary-nu
 
 [[file:imgs/unit2.3-5.png]]
 
+** 2.4: Arithmetic Logic Unit
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/6ZS46/unit-2-4-arithmetic-logic-unit
+
+這個章節在講 ALU, ALU (Arithmetic Logic Unit) 是一顆 CPU 裡面負責進行運算的元件
+
+[[file:imgs/unit2.4-1.png]]
+
+[[file:imgs/unit2.4-2.png]]
+
+在這個課程裡面我們要做的 Hack ALU 是一個 16bit 輸入/輸出的元件，就像這樣
+
+[[file:imgs/unit2.4-3.png]]
+
+[[file:imgs/unit2.4-4.png]]
+
+[[file:imgs/unit2.4-5.png]]
+
+[[file:imgs/unit2.4-6.png]]
 
 * References
 
