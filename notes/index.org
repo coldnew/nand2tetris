@@ -547,6 +547,39 @@ https://www.coursera.org/learn/build-a-computer/lecture/zY2v8/unit-2-1-binary-nu
 
 [[file:imgs/unit2.4-6.png]]
 
+** 2.5: Project 2 Overview
+
+網址:
+https://www.coursera.org/learn/build-a-computer/lecture/WKb8m/unit-2-5-project-2-overview
+
+這章在講如何實做 Project 2 的作業
+
+[[file:imgs/unit2.5-1.png]]
+
+首先是半加法器
+
+[[file:imgs/unit2.5-2.png]]
+
+接下來是全加法器 (實際上是兩個半加法器組合出來)
+
+[[file:imgs/unit2.5-3.png]]
+
+接下來是 16-bit 加法器
+
+[[file:imgs/unit2.5-4.png]]
+
+進位器 (16-bit incrementor)
+
+[[file:imgs/unit2.5-5.png]]
+
+最後，我們可以把所有東西組合出來，做出我們的 ALU
+
+[[file:imgs/unit2.5-6.png]]
+
+以及作業的提示
+
+[[file:imgs/unit2.5-7.png]]
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
