@@ -580,6 +580,14 @@ https://www.coursera.org/learn/build-a-computer/lecture/WKb8m/unit-2-5-project-2
 
 [[file:imgs/unit2.5-7.png]]
 
+** 2.6: Perspctives
+
+網址: https://www.coursera.org/learn/build-a-computer/lecture/8BM1F/unit-2-6-perspectives
+
+這周我們做了 ALU, 下一週要來做 memory system, 在這課程中做的許多 gate 都是標準的，除了 ALU, 畢竟這個課程的 ALU 是簡易版本的。
+
+
+
 * References
 
 這邊紀錄我為了這個課程參考的其他文獻或是 repo
